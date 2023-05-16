@@ -1,0 +1,40 @@
+.battery {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    border: 5px solid black;
+    margin-bottom: 10px;
+}
+
+.battery::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(5, 233, 119);
+    width: calc(var(--level, 100%));
+}
+
+.battery[data-level="25"]::before {
+    --level: 25%;
+    background-color: rgb(253, 10, 10);
+}
+
+.battery[data-level="50"]::before {
+    --level: 50%;
+    background-color: rgb(241, 213, 49);
+}
+
+.battery::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 35px;
+    top: 30px;
+    right: -10px;
+    width: 5px;
+    border-right: 10px solid black;
+}
