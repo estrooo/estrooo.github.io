@@ -1,0 +1,23 @@
+table{
+    float: left;
+    width: 400px;
+    height: 100px;
+}
+
+
+.imp{
+    background: #8ecef8;
+    color: rgb(252, 252, 252);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-small;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+}
+
+.pler{
+    background: rgb(181, 224, 240);
+    width: 350px;
+    height: 40px;
+    text-align:center;
+}
