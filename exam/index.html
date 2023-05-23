@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .row {
+            width: 600px;
+            display: flex;
+            border-left: 1px solid black;
+        }
+        .row div {
+            border: 1px solid black;
+            border-left: none;
+            border-top: none;
+            padding: 2px;
+            background-color: lightblue;
+            width: 150px;
+        }
+
+        .row:not(.header) div:nth-child(even) {
+            background-color: yellow;
+        }
+
+        .header {
+            border-top: 1px solid black;
+        }
+
+        .header div {
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
+
+        .row:not(.header) div:nth-child(3n) {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="row header">
+            <div>Назва</div>
+            <div>Колір</div>
+            <div>Твердість</div>
+            <div>Формула</div>
+        </div>
+        <div class="row">
+            <div>Алмаз</div>
+            <div>Білий</div>
+            <div>10</div>
+            <div>С</div>
+        </div>
+        <div class="row">
+            <div>Рубін</div>
+            <div>Червоний</div>
+            <div>9</div>
+            <div>Al<sub>2</sub>O<sub>3</sub></div>
+        </div>
+        <div class="row">
+            <div>Аметист</div>
+            <div>Голубий</div>
+            <div>7</div>
+            <div>SlO<sub>2</sub></div>
+        </div>
+        <div class="row">
+            <div>Смарагд</div>
+            <div>Зелений</div>
+            <div>8</div>
+            <div>Be<sub>3</sub>Al<sub>2</sub>(SiO<sub>3</sub>)<sub>6</sub></div>
+        </div>
+        <div class="row">
+            <div>Сапфір</div>
+            <div>Голубий</div>
+            <div>9</div>
+            <div>Al<sub>2</sub>O<sub>3</sub></div>
+        </div>
+    </div>
+</body>
+</html>
